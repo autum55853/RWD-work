@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Swiper Playground</title>
+    <link rel="stylesheet" href="..\package\css\swiper.css">
+    <meta name="viewport" content="width=device-width">
+</head>
+<body>
+    <div class="swiper-container">
+        <div class="swiper-scrollbar"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="..\images\images\toystory.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="..\images\images\up.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="..\images\images\walle.jpg" alt="">
+            </div>
+
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <style>
+    body, html {
+        padding: 0;
+        margin: 0;
+        position: relative;
+        height: 100%;
+    }
+    .swiper-container {
+        width: 100%;
+        height: 246px;
+        margin: 50px auto;
+    }
+    .swiper-slide {
+        background: #f1f1f1;
+        color:#000;
+        text-align: center;
+        line-height: 300px;
+    }
+    </style>
+    <script src="..\package\js\swiper.js"></script>
+    <script>
+        var swiper = new Swiper({
+            el: '.swiper-container',
+            speed:500,
+            autoplay: 5000,
+            spaceBetween: 30,
+            slidesPerView: 2,
+            centeredSlides: true,
+            slideToClickedSlide: true,
+            grabCursor: true,
+            loop: true,
+            mousewheel: {
+              enabled: true,
+            },
+            keyboard: {
+              enabled: true,
+            },
+
+            navigation: {
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+</body>
+</html>

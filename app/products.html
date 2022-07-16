@@ -1,0 +1,88 @@
+---
+title: AJ
+layout: ./app/layout.ejs
+engine: ejs
+current: products
+---
+<div class=" bg-primary  py-4" id="services">
+    <div class="productBanner">
+        <img src="https://images.unsplash.com/photo-1512314889357-e157c22f938d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80" class="border-1 rounded-pill border-secondary" alt="">
+    </div>
+    <div class="py-2 mb-2">
+        <h3 class="my-3 text-secondary text-center">我們的服務項目</h3>
+        <hr class="underLine mx-auto">
+        <p class="text-center text-dark fs-4">我們提供一站式服務,滿足您從少量打樣到大量製造的零件需求，替您減少供應鏈分散的成本
+        </p>
+    </div>
+    <div class="products mb-5 card-container  py-3  col-sm-12 d-flex flex-xl-row flex-sm-column  justify-content-lg-around">
+      <div class="card mx-auto bg-primary  border-secondary">
+        <div class="card-body cardFront">
+          <h4 class="card-title">金屬成型加工</h4>
+          <ul class="text-start fs-5">
+            <li class="listStyle">鋁擠型</li>
+            <li class="listStyle">壓鑄件</li>
+            <li class="listStyle">沖壓件</li>
+            <li class="listStyle">鈑金件</li>
+          </ul>
+        </div>
+        <div class="cardBack">
+            <img src="https://images.unsplash.com/photo-1624775103101-3537886f0e06?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="">
+        </div>
+      </div>
+      <div class="card mx-auto bg-primary  border-secondary">
+        <div class="card-body cardFront">
+          <h4 class="card-title">表面處理</h4>
+          <ul class="text-start fs-5">
+            <li class="listStyle">陽極處理</li>
+            <li class="listStyle">不鏽鋼鈍化</li>
+            <li class="listStyle">電鍍</li>
+            <li class="listStyle">研磨</li>
+          </ul>
+        </div>
+        <div class="cardBack">
+            <img src="https://images.unsplash.com/photo-1621235218916-91cf741819be?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80" alt="">
+        </div>
+      </div>
+      <div class="card mx-auto bg-primary   border-secondary">
+        <div class="card-body cardFront">
+          <h4 class="card-title">其他</h4>
+          <ul class="text-start fs-5">
+            <li class="listStyle">線切割</li>
+            <li class="listStyle">鐳射雕刻</li>
+          </ul>
+        </div>
+        <div class="cardBack">
+            <img src="https://images.unsplash.com/photo-1615378809683-6737a9e362f2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="">
+        </div>
+      </div>
+    </div>
+</div>
+<div class="bg-success">
+    <div class="products px-2 py-5">
+      <!-- Swiper -->
+      <div class="swiper swiperEquipment mx-auto ">
+        <div class="swiper-wrapper ">
+            <div class="swiper-slide"><img
+                src="https://images.unsplash.com/photo-1600466886092-f76fabd39a61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=820&q=80"
+                alt="" class="border-2 rounded-pill border-secondary equipmentBanner"></div>
+            <div class="swiper-slide"><img
+                src="https://images.unsplash.com/4/madebyvadim.jpg?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80"
+                alt="" class="border-2 rounded-pill border-secondary equipmentBanner"></div>
+            <div class="swiper-slide"><img
+                src="https://images.unsplash.com/photo-1602664876866-d3b33b77756b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                alt="" class="border-2 rounded-pill border-secondary equipmentBanner"></div>
+            <div class="swiper-slide"><img
+                src="https://images.unsplash.com/photo-1615286922420-c6b348ffbd62?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                alt="" class="border-2 rounded-pill border-secondary equipmentBanner"></div>
+            <div class="swiper-slide"><img
+                    src="https://images.unsplash.com/photo-1602070335326-595fb9a22f32?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                    alt="" class="border-2 rounded-pill border-secondary equipmentBanner"></div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+</div>

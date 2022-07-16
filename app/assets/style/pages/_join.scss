@@ -1,0 +1,18 @@
+.join{
+    max-width: 80%;
+    margin: 0 auto;
+}
+.joinBanner{
+    text-align: center;
+}
+.joinLink{
+    color: $dark;
+    display: block;
+    :hover{
+        color:$info;
+    }
+}
+.joinContent{
+    max-width: 70%;
+    margin: 0 auto;
+}
