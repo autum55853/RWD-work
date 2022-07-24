@@ -13350,12 +13350,12 @@ footer {
 /* RWD */
 /* Extra large devices */
 @media (max-width: 1150px) {
-  .card {
+  .service .card {
     margin: 20px 0; } }
 
-/* desktops */
+/* desktops & mobile */
 @media (max-width: 992px) {
-  .card {
+  .service .card {
     margin: 10px 0;
     width: 500px; }
   .card-body {
@@ -13363,9 +13363,19 @@ footer {
   .mapContent {
     width: 500px;
     height: 300px; }
+  .message {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
   .form {
-    width: 70%;
-    margin: 10px 0; } }
+    max-width: 70%;
+    margin: 10px 0; }
+  .service {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; } }
 
 .equipmentBanner {
   max-width: 500px;
@@ -13385,7 +13395,7 @@ footer {
   max-width: 80%;
   margin: 0 auto; }
 
-.card {
+.machines .card {
   max-width: 80%; }
 
 .card-left {
@@ -13401,12 +13411,12 @@ footer {
 /* RWD */
 /* Extra large devices */
 @media (max-width: 1150px) {
-  .card {
+  .machines .card {
     margin: 20px 0; } }
 
 /* desktops */
 @media (max-width: 992px) {
-  .card {
+  .machines .card {
     margin: 10px auto;
     width: 500px;
     text-align: center; }
@@ -13414,13 +13424,11 @@ footer {
     margin: 0 auto; }
   .imgEquipment {
     max-width: 100%;
-    max-height: 100%; }
-  .mapContent {
-    width: 500px;
-    height: 300px; }
-  .form {
-    width: 70%;
-    margin: 10px 0; } }
+    max-height: 100%; } }
+
+.productsBanner {
+  max-width: 500px;
+  max-height: 300px; }
 
 .productBanner {
   max-width: 100%;
@@ -13469,6 +13477,37 @@ footer {
   border-width: 0.2rem;
   border-radius: 30%; }
 
+/* RWD */
+/* Extra large devices */
+@media (max-width: 1150px) {
+  .serviceText {
+    font-size: 26px; } }
+
+/* desktops & mobile */
+@media (max-width: 992px) {
+  .serviceText {
+    font-size: 18px; }
+  .products {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; } }
+
+@media (max-width: 597px) {
+  .productBanner img {
+    max-width: 300px; }
+  .serviceText {
+    font-size: 18px;
+    padding: 0 5px; }
+  .bannerProducts {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .swiperImg {
+    max-width: 300px;
+    max-height: 300px; } }
+
 .join {
   max-width: 80%;
   margin: 0 auto; }
@@ -13485,5 +13524,18 @@ footer {
 .joinContent {
   max-width: 70%;
   margin: 0 auto; }
+
+/* RWD */
+/* Extra large devices */
+/* desktops */
+@media (max-width: 992px) {
+  .joinBanner img {
+    max-width: 80%; } }
+
+@media (max-width: 597px) {
+  .join h2, .join .h2 {
+    font-size: 20px; }
+  .joinContent {
+    max-width: 100%; } }
 
 /*# sourceMappingURL=all.css.map */
