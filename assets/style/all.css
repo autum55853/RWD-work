@@ -13199,7 +13199,8 @@ h3, .h3 {
   bottom: 10%;
   right: 3%;
   font-size: 48px;
-  color: #f83205; }
+  color: #f83205;
+  z-index: 999; }
 
 .contact {
   margin: 0 auto; }
@@ -13212,7 +13213,6 @@ footer {
   margin-top: -20px; }
 
 /* RWD */
-/* Extra large devices */
 /* desktops */
 @media (max-width: 992px) {
   .navbar {
@@ -13252,7 +13252,15 @@ footer {
         -ms-flex-direction: row;
             flex-direction: row;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap; } }
+        flex-wrap: wrap; }
+  .moveUp {
+    padding: 2px;
+    position: fixed;
+    bottom: 20%;
+    right: 5%;
+    font-size: 36px;
+    color: #f83205;
+    z-index: 999; } }
 
 .banner {
   height: 500px;
@@ -13312,6 +13320,9 @@ footer {
 .card-body {
   padding: 3rem; }
 
+.form {
+  margin: 0 auto; }
+
 .send:hover {
   -webkit-box-shadow: 4px 4px 12px 4px #5e5d5d;
           box-shadow: 4px 4px 12px 4px #5e5d5d; }
@@ -13321,7 +13332,7 @@ footer {
   list-style-image: linear-gradient(0deg, #ffe9d4, #cc6600); }
 
 .swiper {
-  max-width: 50%;
+  width: 100%;
   height: 100%; }
 
 .swiper-slide {
@@ -13341,7 +13352,7 @@ footer {
 
 .mapContent {
   border: 0px;
-  width: 700px;
+  width: 500px;
   height: 450px; }
 
 .small {
@@ -13357,11 +13368,11 @@ footer {
 @media (max-width: 992px) {
   .service .card {
     margin: 10px 0;
-    width: 500px; }
+    max-width: 500px; }
   .card-body {
     margin: 0 auto; }
   .mapContent {
-    width: 500px;
+    width: 700px;
     height: 300px; }
   .message {
     -webkit-box-orient: vertical;
@@ -13369,17 +13380,14 @@ footer {
         -ms-flex-direction: column;
             flex-direction: column; }
   .form {
-    max-width: 70%;
-    margin: 10px 0; }
+    width: 70%; }
   .service {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
-            flex-direction: column; } }
-
-.equipmentBanner {
-  max-width: 500px;
-  max-height: 300px; }
+            flex-direction: column; }
+  .swiper .swiper-slide {
+    width: 100%; } }
 
 .equipment {
   max-width: 90%;
@@ -13392,7 +13400,6 @@ footer {
   max-height: 500px; }
 
 .machines {
-  max-width: 80%;
   margin: 0 auto; }
 
 .machines .card {
@@ -13406,7 +13413,8 @@ footer {
 
 .imgEquipment {
   width: 300px;
-  height: 300px; }
+  height: 300px;
+  vertical-align: middle; }
 
 /* RWD */
 /* Extra large devices */
@@ -13418,17 +13426,29 @@ footer {
 @media (max-width: 992px) {
   .machines .card {
     margin: 10px auto;
-    width: 500px;
+    max-width: 600px;
     text-align: center; }
   .card-body {
     margin: 0 auto; }
   .imgEquipment {
     max-width: 100%;
-    max-height: 100%; } }
+    max-height: 100%; }
+  .contentReverse {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse; } }
 
-.productsBanner {
+@media (max-width: 500px) {
+  .machines .card {
+    margin: 5px auto;
+    max-width: 600px;
+    text-align: center; } }
+
+.productBanner {
   max-width: 500px;
-  max-height: 300px; }
+  max-height: 300px;
+  margin-bottom: 50px; }
 
 .productBanner {
   max-width: 100%;
@@ -13439,6 +13459,13 @@ footer {
   max-height: 300px;
   margin: 0 auto;
   text-align: center; }
+
+.serviceText {
+  font-size: 28px; }
+
+.swiperImg {
+  max-width: 500px;
+  max-height: 500px; }
 
 .card-container {
   -webkit-perspective: 700;
@@ -13478,20 +13505,20 @@ footer {
   border-radius: 30%; }
 
 /* RWD */
-/* Extra large devices */
-@media (max-width: 1150px) {
-  .serviceText {
-    font-size: 26px; } }
-
 /* desktops & mobile */
 @media (max-width: 992px) {
   .serviceText {
-    font-size: 18px; }
+    font-size: 22px; }
   .products {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
-            flex-direction: column; } }
+            flex-direction: column; }
+  .products .card {
+    margin: 20px 0; }
+  .swiperImg {
+    max-width: 400px;
+    max-height: 400px; } }
 
 @media (max-width: 597px) {
   .productBanner img {
@@ -13499,11 +13526,6 @@ footer {
   .serviceText {
     font-size: 18px;
     padding: 0 5px; }
-  .bannerProducts {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column; }
   .swiperImg {
     max-width: 300px;
     max-height: 300px; } }
